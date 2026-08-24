@@ -1,0 +1,75 @@
+# ==========================================
+# 1. Backend (Go / Gin)
+# ==========================================
+# File thực thi (Binary) sau khi build
+backend/main
+backend/server
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# Thư mục chứa file tạm khi dùng Live-Reload (Air / Fresh)
+backend/tmp/
+tmp/
+
+# Thư mục chứa các file phụ thuộc nếu dùng 'go mod vendor'
+backend/vendor/
+
+# ==========================================
+# 2. Frontend (Next.js / Node.js)
+# ==========================================
+# Dependencies
+frontend/node_modules/
+
+# Thư mục build
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# Logs & Cache
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+frontend/.turbo/
+
+# ==========================================
+# 3. Biến môi trường & Bí mật (Secrets)
+# ==========================================
+*.env
+*.env.*
+!.env.example
+
+# ==========================================
+# 4. Local Data (Docker & Storage)
+# ==========================================
+postgres_data/
+redis_data/
+minio_data/
+
+# ==========================================
+# 5. Hệ điều hành & Trình soạn thảo (IDEs)
+# ==========================================
+# macOS / Linux / Windows
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+thumbs.db
+ehthumbs.db
+
+# VS Code & JetBrains (Goland, WebStorm)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
