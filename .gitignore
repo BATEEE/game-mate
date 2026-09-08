@@ -8,6 +8,7 @@ backend/*.exe
 backend/*.dll
 backend/*.so
 backend/*.dylib
+backend/.data/
 
 # Thư mục chứa file tạm khi dùng Live-Reload (Air / Fresh)
 backend/tmp/
@@ -48,6 +49,7 @@ frontend/.turbo/
 postgres_data/
 redis_data/
 minio_data/
+backend/.data/
 
 # ==========================================
 # 5. Hệ điều hành & Trình soạn thảo (IDEs)
