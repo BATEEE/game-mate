@@ -7,7 +7,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// CORS trả về middleware cấu hình CORS cho phép giao tiếp an toàn với frontend.
 func CORS() gin.HandlerFunc {
 	return cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000", "http://127.0.0.1:3000"},

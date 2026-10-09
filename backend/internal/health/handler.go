@@ -3,6 +3,7 @@ package health
 import (
 	"net/http"
 
+	"github.com/BATEEE/game-mate/backend/pkg/response"
 	"github.com/gin-gonic/gin"
 )
 
@@ -24,9 +25,8 @@ func (h *Handler) RegisterRoutes(rg *gin.RouterGroup) {
 func (h *Handler) Check(c *gin.Context) {
 	result := h.svc.Check(c.Request.Context())
 
-	statusCode := http.StatusOK
 	if result.Status == StatusDown {
-		statusCode = http.StatusServiceUnavailable
+		response.Error(c, )
 	}
 
 	c.JSON(statusCode, result)
